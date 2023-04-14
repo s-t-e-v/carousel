@@ -18,11 +18,13 @@ function Arrowright() {
 function Carousel() {
   return (
     <>
-      <Arrowleft/>
       <div className="carousel">
-        carousel
+        <Arrowleft/>
+          <div className="slide">
+            <img src={require("./img/mountain.jpg")} alt=""/>
+          </div>
+        <Arrowright/>
       </div>
-      <Arrowright/>
     </>
   );
 }
