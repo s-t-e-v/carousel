@@ -1,17 +1,13 @@
 
 function Arrowleft() {
   return (
-    <button className="arrow arrowleft">
-      arrowleft
-    </button>
+    <button className="arrow arrowleft"></button>
   );
 }
 
 function Arrowright() {
   return (
-    <button className="arrow arrowright">
-      arrowright
-    </button>
+    <button className="arrow arrowright"></button>
   );
 }
 
@@ -32,8 +28,10 @@ function Carousel() {
 export default function App() {
   return (
     <>
-      <h1>Hello World!</h1>
-      <Carousel />
+      <div className="app">
+        <h1>Project 1: Carousel</h1>
+        <Carousel />
+      </div>
     </>
   );
 }

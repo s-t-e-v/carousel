@@ -1,3 +1,71 @@
-h1{
-    color: blue;
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* App */
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2em;
+
+    height: 100vh;
+}
+
+/* Carousel */
+.carousel {
+    display: flex;
+    gap: 4em;
+    align-items: center;
+}
+
+
+/* Slide */
+.slide {
+    width: 500px;
+    }
+    .slide img{
+        width: 100%;
+    }
+
+
+/* Arrows */
+
+.arrow {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+
+    background-color: black;
+    border: none;
+    color: white;
+    }
+    .arrowleft {
+        background-image: url("img/left.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 65%;
+    }
+    .arrowright {
+        background-image: url("img/right.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 65%;
+    }
+
+.arrow:hover{
+    background-color: #111111;
+}
+
+.arrow:active{
+    box-shadow: 0px 0px 5px black;
 }
