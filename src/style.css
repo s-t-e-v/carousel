@@ -50,6 +50,8 @@ body {
     background-color: black;
     border: none;
     color: white;
+
+    cursor: pointer;
     }
     .arrowleft {
         background-image: url("img/left.svg");

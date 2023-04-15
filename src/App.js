@@ -50,9 +50,9 @@ function Carousel() {
   return (
     <div className="carousel">
       <Arrowleft onLeftClick={() => handleClick(currentImg, LEFT)}/>
-        <div className="slide">
-          <img src={require("./img/" + images[currentImg])} alt=""/>
-        </div>
+      <div className="slide">
+        <img src={require("./img/" + images[currentImg])} alt=""/>
+      </div>
       <Arrowright onRightClick={() => handleClick(currentImg, RIGHT)}/>
     </div>
   );
