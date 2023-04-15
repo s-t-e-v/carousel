@@ -1,7 +1,12 @@
 import { useState } from 'react';
 
-const LEFT = "LEFT",
-      RIGHT = "RIGHT";
+const images = [
+  "mountain.jpg",
+  "desert.jpg",
+  "moon.jpg",
+  "waterfall.jpg",
+];
+      
 
 function Arrowleft({onLeftClick}) {
   return (
@@ -15,54 +20,29 @@ function Arrowright({onRightClick}) {
   );
 }
 
-function Carousel() {
+
+export default function App() {
+
   const [currentImg, setCurrentImg] = useState(0);
 
-  const images = [
-    "mountain.jpg",
-    "desert.jpg",
-    "moon.jpg",
-    "waterfall.jpg",
-  ];
+  function prevSlide() {
+    setCurrentImg(currentImg === 0? images.length - 1 : currentImg - 1);
+  }
 
-  function handleClick(img, side) {
-
-    switch(side) {
-      case LEFT:
-        if(img > 0)
-          img--;
-        else
-          img = images.length - 1;
-        break;
-      case RIGHT:
-        if(img < images.length - 1)
-          img++;
-        else
-          img = 0;
-        break;
-      default:
-        break;
-    }
-
-    setCurrentImg(img);
+  function nextSlide() {
+    setCurrentImg(currentImg === images.length - 1? 0 : currentImg + 1);
   }
 
   return (
-    <div className="carousel">
-      <Arrowleft onLeftClick={() => handleClick(currentImg, LEFT)}/>
-      <div className="slide">
-        <img src={require("./img/" + images[currentImg])} alt=""/>
-      </div>
-      <Arrowright onRightClick={() => handleClick(currentImg, RIGHT)}/>
-    </div>
-  );
-}
-
-export default function App() {
-  return (
     <div className="app">
       <h1>Project 1: Carousel</h1>
-      <Carousel />
+        <div className="carousel">
+          <Arrowleft onLeftClick={prevSlide}/>
+          <div className="slide">
+            <img src={require("./img/" + images[currentImg])} alt=""/>
+          </div>
+          <Arrowright onRightClick={nextSlide}/>
+      </div>
     </div>
   );
 }
