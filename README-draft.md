@@ -246,7 +246,7 @@ https://github.com/facebook/create-react-app
 ## Acknowledgements
 
 - Allah who made this and everything possible
-- ChatGPT which helped me:
+- ChatGPT (and extensivelly OpenAI and the people who produced the data GPT trained on) which helped me:
     - to understand the map array part of the project poster solution.
     - to embark into the process of analyzing the solution
 - React.dev for their tic-tac-toe tutorial and their documentation
