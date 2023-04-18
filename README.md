@@ -34,7 +34,7 @@ This is a solution to the #1 Project out of the [7 React Projects for Beginners 
 ### Links
 
 **s-t-e-v** (challenger)
-- Solution URL: [Github repo](https://github.com/s-t-e-v/carousel)
+- Solution URL: [Github repo](https://github.com/s-t-e-v/carousel-react)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 **Reed Barger** @freecodecamp.org (project poster)
@@ -46,7 +46,7 @@ If you want to run my solution on your pc, follow the instructions:
 
 1. Open your terminal and then type
     ```bash
-    git clone https://github.com/s-t-e-v/carousel
+    git clone https://github.com/s-t-e-v/carousel-react
     ```
 2. `cd` into the new folder and type
     ```bash
