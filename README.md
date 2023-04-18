@@ -2,6 +2,12 @@
 
 This is a solution to the #1 Project out of the [7 React Projects for Beginners in 2023](https://www.freecodecamp.org/news/react-projects-for-beginners-easy-ideas-with-code/). The carousel should allow the user to click the backwards or forwards button to go to the previous or next image.
 
+## !! Don't forget to
+- [ ] complete the remaining sections
+- [ ] put an access link to the `sol` branch, so viewer can refer to it when reading the documentation
+- [ ] indenting the documentation correctly
+- [ ] correct spelling mistakes and phrases construction
+- [ ] remove this section
 
 ## Table of contents
 
