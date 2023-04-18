@@ -251,3 +251,7 @@ https://github.com/facebook/create-react-app
     - to embark into the process of analyzing the solution
 - React.dev for their tic-tac-toe tutorial and their documentation
 
+## To look at
+
+- https://levelup.gitconnected.com/how-to-create-a-minimal-react-and-parcel-app-in-5-steps-2806fa09a371
+- https://dev.to/egg_jose/how-to-create-a-react-app-without-create-react-app-command-1fgc
